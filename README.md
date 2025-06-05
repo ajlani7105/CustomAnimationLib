@@ -22,7 +22,8 @@
 
 
 <div dir="ltr">
- ``` SWIFT
+``` SWIFT
+    
 // الهيكل الاساسي لتعديل الانيميشن
 public struct CustomAnimationProperty : CustomEffectProperty  {
     // نوع الانيميشن

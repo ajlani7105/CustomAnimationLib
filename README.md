@@ -58,7 +58,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 
 <div dir="ltr">
 
-```swift
+```  swift
 // دوران مخصص
 Text("مثال")
       .AddCustomAnimation(kind: .CustomRotate,

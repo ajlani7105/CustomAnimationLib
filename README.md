@@ -23,7 +23,7 @@
 
 <span dir="ltr">
     
-```javascript
+```
 // الهيكل الاساسي لتعديل الانيميشن
 
 public struct CustomAnimationProperty : CustomEffectProperty  {

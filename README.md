@@ -21,7 +21,7 @@
 </div>
 
 
-<div dir="ltr" align="left">
+<div dir="ltr" align="right">
     
 ```swift
 // الهيكل الاساسي لتعديل الانيميشن

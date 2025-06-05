@@ -1,7 +1,9 @@
+<p align="center">
 <img src="Animation1.gif" width="30%" height="30%">
 <img src="Animation2.gif" width="30%" height="30%">
 <img src="Animation3.gif" width="30%" height="30%">
 <img src="Animation4.gif" width="30%" height="30%">
+</p>
 
 <div dir="rtl">
 

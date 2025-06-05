@@ -40,6 +40,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
     public var valuesCustom       : ValuesCustom       = ValuesCustom()
 }
 ```
+
 </div>
 
 

@@ -21,9 +21,7 @@
 </div>
 
 
-<div dir="ltr">
-    
-``` SWIFT <div dir="ltr">
+<div dir="ltr"> ``` SWIFT
 // الهيكل الاساسي لتعديل الانيميشن
 public struct CustomAnimationProperty : CustomEffectProperty  {
     // نوع الانيميشن
@@ -42,10 +40,8 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
     public var valuesCustom       : ValuesCustom       = ValuesCustom()
 }
 
+
 ```
-
-
-
 </div>
 
 

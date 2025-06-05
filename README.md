@@ -21,9 +21,9 @@
 </div>
 
 
-<span dir="ltr" align="right">
+<span dir="ltr">
     
-```swift
+```javascript
 // الهيكل الاساسي لتعديل الانيميشن
 
 public struct CustomAnimationProperty : CustomEffectProperty  {

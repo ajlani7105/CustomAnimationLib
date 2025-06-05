@@ -39,6 +39,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
     //  قيم اضافية لتعديل قيم الدوران والزوم ايفكت
     public var valuesCustom       : ValuesCustom       = ValuesCustom()
 }
+
 ```
 
 </div>

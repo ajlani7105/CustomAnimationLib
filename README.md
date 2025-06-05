@@ -1,9 +1,9 @@
 <p align="center">
 <img src="Animation1.gif" width="30%" height="30%">
-<img src="Animation2.gif" width="30%" height="30%">
+    <img src="Animation4.gif" width="30%" height="30%">
 <img src="Animation3.gif" width="30%" height="30%">
-<img src="Animation4.gif" width="30%" height="30%">
 </p>
+
 
 <div dir="rtl">
 
@@ -16,6 +16,8 @@
 <div dir="rtl">
 
 # 👨🏽‍💻 الكود :-
+</div>
+
 
 <div dir="ltr">
 
@@ -41,7 +43,12 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 </div>
 
 
+<div dir="rtl">
+
 # 📝 امثله سريعة للاستخدام :-  
+
+</div>
+
 
 <div dir="ltr">
 
@@ -99,8 +106,12 @@ Text("مثال")
 ```
 </div>
 
+<div dir="rtl">
 
 # 📀 انشاء عرض keyframe مخصص :-
+
+</div>
+
 <div dir="ltr">
 
 ```swift
@@ -202,5 +213,5 @@ VStack{}
 </div>
 
 
-</div>
+<img src="Animation2.gif" width="30%" height="30%">
 

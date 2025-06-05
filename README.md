@@ -3,6 +3,9 @@
 
 # طريقة الاستعمال 
 ١ - انشاد تآثير دوران جاهز
+![til](Animation2.gif)
+![til](Animation3.gif)
+
 
 ```swift
 Text("?")
@@ -39,8 +42,6 @@ Text("?")
 ![til](Animation1.gif)
 
 
-![til](Animation2.gif)
-![til](Animation3.gif)
 ![til](Animation4.gif)
 
 

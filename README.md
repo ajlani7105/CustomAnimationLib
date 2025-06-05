@@ -21,8 +21,8 @@
 </div>
 
 
- <div dir="auto">
-     
+<div dir="auto" align="left">
+    
 ```swift
 // الهيكل الاساسي لتعديل الانيميشن
 

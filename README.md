@@ -22,27 +22,30 @@
 
 
 <div dir="ltr">
-``` swift
     
+```
 // الهيكل الاساسي لتعديل الانيميشن
+
 public struct CustomAnimationProperty : CustomEffectProperty  {
     // نوع الانيميشن
+    
     public var animation: Animation = .linear
     
     // x,y,z ابعاد
     public var dimensions         : Dimensions         = Dimensions()
 
     // قيم الوقت
+    
     public var customTimeInterval : CustomTimeInterval = CustomTimeInterval()
 
     //  التحكم في اضافات الشفافية والضبابية
+    
     public var applyCustom        : ApplyCustom        = ApplyCustom()
 
     //  قيم اضافية لتعديل قيم الدوران والزوم ايفكت
+    
     public var valuesCustom       : ValuesCustom       = ValuesCustom()
 }
-
-
 ```
 
 </div>

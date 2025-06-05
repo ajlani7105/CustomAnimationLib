@@ -1,7 +1,7 @@
 <p align="center">
-<img src="Animation1.gif" width="30%" height="30%">
+    <img src="Animation1.gif" width="30%" height="30%">
     <img src="Animation4.gif" width="30%" height="30%">
-<img src="Animation3.gif" width="30%" height="30%">
+    <img src="Animation3.gif" width="30%" height="30%">
 </p>
 
 
@@ -21,6 +21,8 @@
 
 <div dir="ltr">
 
+
+    
 ```swift
 // الهيكل الاساسي لتعديل الانيميشن
 public struct CustomAnimationProperty : CustomEffectProperty  {
@@ -41,6 +43,8 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 }
 
 ```
+
+
 
 </div>
 

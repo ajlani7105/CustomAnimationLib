@@ -23,7 +23,7 @@
 
 <div dir="ltr">
     
-```
+``` SWIFT
 // الهيكل الاساسي لتعديل الانيميشن
 public struct CustomAnimationProperty : CustomEffectProperty  {
     // نوع الانيميشن
@@ -58,7 +58,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 
 <div dir="ltr">
 
-swift```
+```
 // دوران مخصص
 Text("مثال")
       .AddCustomAnimation(kind: .CustomRotate,

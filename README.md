@@ -1,2 +1,4 @@
 ![til](Animation1.gif)
-<img src="Animation1.gif" width="auto" height="auto"/>
+![til](Animation2.gif)
+![til](Animation3.gif)
+![til](Animation4.gif)

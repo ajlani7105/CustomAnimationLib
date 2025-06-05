@@ -468,7 +468,7 @@ public struct CustomTypeEffect_FallingWithRotate : ViewModifier,Sendable {
                 FallValue = properties.dimensions.y
                 RotateValue = properties.valuesCustom.Rotate
                //print(FallValue)
-                timer = Timer.scheduledTimer(withTimeInterval: properties.customTimeInterval.duration, repeats: true) {_ in
+                timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) {_ in
                     MainActor.assumeIsolated {
                             FallValue = FallValue / 2
                             //print(FallValue)

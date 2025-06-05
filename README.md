@@ -3,12 +3,14 @@
 
 # طريقة الاستعمال 
 ١ - انشاد تآثير دوران جاهز
-<div dir=rtl> ```swift
+```swift
+<div dir=rtl> 
 // دوران اكس
 Text("?")
     .AddCustomAnimation(kind: .RotateX, properties: CustomAnimationProperty(dimensions: .init(x:-10,y:10,z:3)))
-```
 </div>
+
+```
 
 
 

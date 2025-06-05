@@ -19,7 +19,7 @@
 </div>
 
 
-<div dir="ltr">
+<div dir=ltr>
 
 
     
@@ -56,7 +56,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 </div>
 
 
-<div dir="ltr">
+<div dir=ltr>
 
 ```swift
 // دوران مخصص
@@ -110,6 +110,7 @@ Text("مثال")
 
 
 ```
+
 </div>
 
 <div dir="rtl">

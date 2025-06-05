@@ -461,14 +461,14 @@ public struct CustomTypeEffect_FallingWithRotate : ViewModifier,Sendable {
             .offset(y: FirstAppear ? -FallValue : 0
              )
             .rotationEffect(.degrees(FirstAppear ? RotateValue : 0))
-            .animation(CustomTypeEffect.getAnimation(a: properties.animation, duration: properties.customTimeInterval.duration )?.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed) ??
+            .animation(CustomTypeEffect.getAnimation(a: properties.animation, duration: 0.1 )?.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed) ??
                        properties.animation.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed), value: FirstAppear)
             .onAppear {
                FirstAppear = false
                 FallValue = properties.dimensions.y
                 RotateValue = properties.valuesCustom.Rotate
                //print(FallValue)
-                timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) {_ in
+                timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) {_ in
                     MainActor.assumeIsolated {
                             FallValue = FallValue / 2
                             //print(FallValue)
@@ -510,14 +510,14 @@ public struct CustomTypeEffect_HeavyFalling : ViewModifier {
         content
             .offset(y: FirstAppear ? -FallValue : 0
              )
-            .animation(CustomTypeEffect.getAnimation(a: properties.animation, duration: properties.customTimeInterval.duration )?.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed) ??  properties.animation.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed), value: FirstAppear)
+            .animation(CustomTypeEffect.getAnimation(a: properties.animation, duration: 0.1 )?.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed) ??  properties.animation.delay(properties.customTimeInterval.delay).speed(properties.customTimeInterval.speed), value: FirstAppear)
            .onAppear {
                
                FirstAppear = false
                FallValue = properties.dimensions.y
                //print(FallValue)
                
-               timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) {_ in
+               timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) {_ in
                    MainActor.assumeIsolated {
                        
                        FallValue = FallValue / 2

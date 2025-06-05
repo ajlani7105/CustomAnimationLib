@@ -4,7 +4,6 @@
 # طريقة الاستعمال 
 ١ - انشاد تآثير دوران جاهز
 ```swift
-// دوران اكس
 Text("?")
     .AddCustomAnimation(kind: .RotateX, properties: CustomAnimationProperty(dimensions: .init(x:-10,y:10,z:3)))
 
@@ -18,4 +17,6 @@ Text("?")
 ![til](Animation2.gif)
 ![til](Animation3.gif)
 ![til](Animation4.gif)
+
+
 </div>

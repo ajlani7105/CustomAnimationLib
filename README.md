@@ -19,9 +19,7 @@
 </div>
 
 
-<div dir=ltr>
-
-
+<div dir="ltr">
     
 ```swift
 // الهيكل الاساسي لتعديل الانيميشن
@@ -56,7 +54,7 @@ public struct CustomAnimationProperty : CustomEffectProperty  {
 </div>
 
 
-<div dir=ltr>
+<div dir="ltr">
 
 ```swift
 // دوران مخصص

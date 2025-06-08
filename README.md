@@ -118,8 +118,7 @@ Text("مثال")
 
 # 📀 انشاء عرض keyframe مخصص :-
 
-<img src="keyframeAnimation(2).gif" width="30%" height="30%" >
-
+[<img src="keyframeAnimation(2).gif" width="250"/>](keyframeAnimation(2).gif)
 </div>
 
 <div dir="ltr">

@@ -11,10 +11,10 @@ extension Collection where Indices.Iterator.Element == Index {
  extension View {
     
     
-    public func AddKeyframeAction(action : [(() -> Void)],animation: Animation = .spring,duration: Double = 1,speed: Double = 0.5,delay: TimeInterval = 1
+    public func AddKeyframeAction(action : [(() -> Void)],delay: TimeInterval = 1
     ,Repeat: Bool = true) ->  some View {
         
-        self.modifier(AddCustomKeyframeAnimationModifier(frames:action,animation: animation,duration: duration,speed: speed,delay: delay,Repeat: Repeat))
+        self.modifier(AddCustomKeyframeAnimationModifier(frames:action,delay: delay,Repeat: Repeat))
 
         
     }

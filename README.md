@@ -96,7 +96,7 @@ Text("مثال")
      .AddCustomAnimation(kind: .Zoom,
             properties: CustomAnimationProperty(
                 customTimeInterval: .init(duration: 0.4,reverseAfter: 6),
-                valuesCustom: .init(ZoomInScale: 3)
+                valuesCustom: .init(ZoomScale: 3)
             )
      )
 

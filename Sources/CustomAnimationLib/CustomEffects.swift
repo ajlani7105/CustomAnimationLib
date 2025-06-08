@@ -117,11 +117,11 @@ public struct ApplyCustom {
 }
 
 public struct ValuesCustom {
-    var ZoomInScale : CGFloat  = 1.9
+    var ZoomScale   : CGFloat  = 1.9
     var Rotate      : CGFloat  = 3.0
     var RotateDegree: CGFloat  = 0
-    public init(ZoomInScale: CGFloat =  1.9 , Rotate: CGFloat = 3.0, RotateDegree: CGFloat = 0) {
-        self.ZoomInScale = ZoomInScale
+    public init(ZoomScale: CGFloat =  1.9 , Rotate: CGFloat = 3.0, RotateDegree: CGFloat = 0) {
+        self.ZoomScale = ZoomScale
         self.Rotate = Rotate
         self.RotateDegree = RotateDegree
     }
@@ -448,7 +448,7 @@ public struct CustomTypeEffect_AppearFromRight : ViewModifier {
 
 
 
-public struct CustomTypeEffect_FallingWithRotate : ViewModifier,Sendable {
+public struct CustomTypeEffect_FallingWithRotate : ViewModifier {
     var properties : CustomAnimationProperty
     
     @State private var FirstAppear  = true
@@ -586,7 +586,7 @@ public struct CustomTypeEffect_Zoom : ViewModifier {
 
     public func body(content: Content) -> some View {
         content
-            .scaleEffect(FirstAppear  ? properties.valuesCustom.ZoomInScale : 1)
+            .scaleEffect(FirstAppear  ? properties.valuesCustom.ZoomScale : 1)
             .opacity(FirstAppear && properties.applyCustom.applyOpacity ? 0.1 : 1)
             .blur(radius:FirstAppear && properties.applyCustom.applyBlur ? 50 : 0)
             .onAppear {

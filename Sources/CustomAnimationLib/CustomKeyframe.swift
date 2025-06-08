@@ -3,16 +3,10 @@ import SwiftUI
 
 
 
-public struct FrameAnimationProperty {
-    
-    
-    var frame  : (() -> Void) = {}
 
-    
-}
 
 public struct AddCustomKeyframeAnimationModifier : ViewModifier {
-    var frames : [FrameAnimationProperty]
+    var frames : [(() -> Void)]
     
     var animation   : Animation  = .spring
     var duration    : Double     = 1
@@ -34,7 +28,7 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
         
         MainActor.assumeIsolated {
             if let active = frames[safe:ActiveIndex] {
-                active.frame()
+                active()
 
             }
             ActiveIndex += 1

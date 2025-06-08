@@ -118,7 +118,7 @@ Text("مثال")
 
 # 📀 انشاء عرض keyframe مخصص :-
 
-<img src="keyframeAnimation(1).gif"  width="30%" height="30%">
+<img src="keyframeAnimation(1).gif"  width="70%" height="70%">
 
 </div>
 
@@ -226,13 +226,13 @@ VStack{}
 
 
 <div dir="rtl">
+    
 # 📀 انشاء عرض keyframe بواسطة AddKeyframeAction بدل استخدام الـView :-
-
+<img src="KeyframeAction.gif" width="50%" height="50%">
 
 </div>
 
 <div dir="ltr">
-<img src="KeyframeAction.gif" width="50%" height="50%">
 
 ```swift
 struct ContentView: View {

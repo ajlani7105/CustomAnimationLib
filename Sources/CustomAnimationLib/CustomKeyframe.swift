@@ -8,6 +8,10 @@ import SwiftUI
 public struct AddCustomKeyframeAnimationModifier : ViewModifier {
     var frames : [(() -> Void)]
     
+    
+    var animation   : Animation = .linear
+    var duration                = 0.1
+    var speed                   = 0.5
     var delay       : TimeInterval = 1
     var Repeat      : Bool       = true
 
@@ -16,7 +20,6 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
 
     
     @State private var AnimationTimer       : Timer? = nil
-    @State private var AnimationTimerStart  = false
 
     
 
@@ -24,13 +27,16 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
     nonisolated func NextAction () {
         
         MainActor.assumeIsolated {
-            if let active = frames[safe:ActiveIndex] {
-                active()
+            withAnimation(CustomTypeEffect.getAnimation(a: animation, duration: duration)) {
+                if let active = frames[safe:ActiveIndex] {
+                    active()
 
-            }
-            ActiveIndex += 1
-            if ActiveIndex > frames.count - 1 {
-                ActiveIndex = 0
+                }
+                ActiveIndex += 1
+                if ActiveIndex > frames.count - 1 {
+                    ActiveIndex = 0
+
+                }
 
             }
 
@@ -46,19 +52,15 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
                     NextAction()
                     AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
                         NextAction()
-                        MainActor.assumeIsolated {
-                            AnimationTimerStart.toggle()
-
-                        }
+                        
 
                     }
                     AnimationTimer?.fire()
 
                 } else {
                     AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
-                        NextAction()
                         MainActor.assumeIsolated {
-                            AnimationTimerStart.toggle()
+                            NextAction()
                             TimerCount += 1
                             if TimerCount == frames.count {
                                 AnimationTimer?.invalidate()

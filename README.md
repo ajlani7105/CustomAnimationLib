@@ -226,7 +226,7 @@ VStack{}
 
 
 <div dir="ltr">
-<img src="keyframeAnimation.gif" width="50%" height="50%">
+<img src="keyframeAction.gif" width="50%" height="50%">
 
 ```swift
 struct ContentView: View {

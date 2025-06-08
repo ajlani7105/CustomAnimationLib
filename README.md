@@ -114,11 +114,13 @@ Text("مثال")
 
 </div>
 
+
+<img src="keyframeAnimation(2).gif" />
+
 <div dir="rtl">
 
 # 📀 انشاء عرض keyframe مخصص :-
 
-<img src="keyframeAnimation(2).gif" />
 
 </div>
 

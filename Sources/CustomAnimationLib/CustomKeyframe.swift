@@ -8,9 +8,6 @@ import SwiftUI
 public struct AddCustomKeyframeAnimationModifier : ViewModifier {
     var frames : [(() -> Void)]
     
-    var animation   : Animation  = .spring
-    var duration    : Double     = 1
-    var speed       : Double     = 1
     var delay       : TimeInterval = 1
     var Repeat      : Bool       = true
 
@@ -44,11 +41,10 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
     public func body(content: Content) -> some View {
         
         content
-            .animation(CustomTypeEffect.getAnimation(a: animation, duration: duration )?.speed(speed).delay(delay) ?? .spring(duration :0.1), value: AnimationTimerStart)
             .onAppear {
                 if Repeat {
                     NextAction()
-                    AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay + duration , repeats: true){ _ in
+                    AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
                         NextAction()
                         MainActor.assumeIsolated {
                             AnimationTimerStart.toggle()
@@ -59,7 +55,7 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
                     AnimationTimer?.fire()
 
                 } else {
-                    AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay + duration , repeats: true){ _ in
+                    AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
                         NextAction()
                         MainActor.assumeIsolated {
                             AnimationTimerStart.toggle()

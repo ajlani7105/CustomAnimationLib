@@ -27,7 +27,6 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
     nonisolated func NextAction () {
         
         MainActor.assumeIsolated {
-            withAnimation(CustomTypeEffect.getAnimation(a: animation, duration: duration)) {
                 if let active = frames[safe:ActiveIndex] {
                     active()
 
@@ -38,7 +37,7 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
 
                 }
 
-            }
+            
 
         }
 
@@ -51,7 +50,10 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
                 if Repeat {
                     NextAction()
                     AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
-                        NextAction()
+                        withAnimation(CustomTypeEffect.getAnimation(a: animation, duration: duration)?.repeatCount(1)) {
+                            
+                            NextAction()
+                        }
                         
 
                     }

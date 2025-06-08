@@ -118,7 +118,7 @@ Text("مثال")
 
 # 📀 انشاء عرض keyframe مخصص :-
 
-<img src="keyframeAnimation(1).gif"  width="70%" height="70%">
+<img src="keyframeAnimation(1).gif"  width="50%" height="50%">
 
 </div>
 

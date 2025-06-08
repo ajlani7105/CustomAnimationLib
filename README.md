@@ -118,7 +118,7 @@ Text("مثال")
 
 # 📀 انشاء عرض keyframe مخصص :-
 
-<img src="keyframeAnimation(1).gif" align="center" width="30%" height="30%">
+<img src="keyframeAnimation(1).gif"  width="30%" height="30%">
 
 </div>
 
@@ -224,6 +224,12 @@ VStack{}
 
 
 
+
+<div dir="rtl">
+# 📀 انشاء عرض keyframe بواسطة AddKeyframeAction بدل استخدام الـView :-
+
+
+</div>
 
 <div dir="ltr">
 <img src="KeyframeAction.gif" width="50%" height="50%">

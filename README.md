@@ -223,6 +223,72 @@ VStack{}
 </div>
 
 
+
+
+<div dir="ltr">
+<img src="keyframeAnimation.gif" width="50%" height="50%">
+
+```swift
+struct ContentView: View {
+    
+    @State var color  = Color.clear
+    @State var color2 = Color.clear
+    @State var color3 = Color.clear
+    @State var id      = 1
+
+    @State var y      = 1.0
+
+    var body: some View {
+        
+        Image(systemName: "heart.fill")
+            .font(.system(size: 40))
+            .foregroundStyle(LinearGradient(colors: [color,color2], startPoint: .leading, endPoint: .trailing).shadow(.drop(color: color2.opacity(0.4), radius: 10)))
+            .offset(y:y)
+
+        Text("جيت قبل العطر يبرد")
+            .font(.custom("DGBebo-Bold", size: 37))
+            .foregroundStyle(LinearGradient(stops: [
+                Gradient.Stop(color: color, location: 0.30),
+                Gradient.Stop(color: color2, location: 0.70),
+                Gradient.Stop(color: color3,  location: 1),
+            ], startPoint: UnitPoint(x: 0, y: 1), endPoint: .trailing).shadow(.drop(color: .black.opacity(0.25), radius: 10)).shadow(.inner(radius: 1)))
+            .id(id)
+            .AddKeyframeAction(action: [
+                {
+                    color = .blue
+                    color2 = .red
+                    color3 = .gray
+                    id += 1
+                    y = 0
+
+
+
+                },
+                {
+                    color = .green
+                    color2 = .orange
+                    color3 = .indigo
+                    id += 1
+                    y = 5
+
+
+                },
+                {
+                    color = .orange
+                    color2 = .yellow
+                    color3 = .mint
+                    id += 1
+                    y = 10
+
+
+                }
+            ],animation: .easeInOut,duration: 1,delay: 2)
+   }
+}
+```
+</div>
+
+
 <img src="Animation2.gif" width="30%" height="30%">
 <img src="Animation4.gif" width="30%" height="30%">
 

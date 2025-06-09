@@ -62,12 +62,15 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
                 } else {
                     AnimationTimer = Timer.scheduledTimer(withTimeInterval: delay , repeats: true){ _ in
                         MainActor.assumeIsolated {
-                            NextAction()
+                            withAnimation(CustomTypeEffect.getAnimation(a: animation, duration: duration)?.repeatCount(1)) {
+                                NextAction()
+                            }
                             TimerCount += 1
                             if TimerCount == frames.count {
                                 AnimationTimer?.invalidate()
                                 
                             }
+
 
                         }
 
@@ -85,14 +88,6 @@ public struct AddCustomKeyframeAnimationModifier : ViewModifier {
         
         
     }
-}
-
-public struct FrameAnimationViewProperty {
-    
-    
-    var frame  :  any View
-
-    
 }
 
 

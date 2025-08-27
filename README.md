@@ -4,7 +4,7 @@
 <div dir="rtl">
 
 # 📚 مكتبة  CustomAnimationLib 
-مكتبة Swift بسيطة تحوي مؤثرات جاهزة وامكانية انشاء انيمشن مخصص 😃
+مكتبة Swift بسيطة تحوي مؤثرات جاهزة وامكانية انشاء انيمشن مخصص 
 <p align="center">
     <img src="Animation1.gif" width="30%" height="30%">
     <img src="Animation3.gif" width="30%" height="30%">
